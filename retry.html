@@ -11,50 +11,57 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            /* CUSTOMIZE: Background color of the retry page */
             background-color: #fff893; 
             font-family: 'Arial', sans-serif;
             text-align: center;
+            overflow: hidden; /* Prevents accidental scrolling on this page */
         }
 
         .container {
             padding: 20px;
             max-width: 400px;
+            width: 90%;
         }
 
-        /* CUSTOMIZE: This controls the GIF size and look */
         .sad-gif {
             width: 100%;
-            max-width: 250px; /* Limits the size so it's not too big */
-            border-radius: 15px; /* Rounds the corners of the GIF */
+            max-width: 250px; 
+            border-radius: 15px; 
             margin-bottom: 20px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            display: block; /* Centers the image properly */
+            margin-left: auto;
+            margin-right: auto;
         }
 
         h1 { 
             color: #6c757d; 
             margin-bottom: 10px;
+            font-size: 1.8rem;
         }
 
         p {
             color: #888;
             margin-bottom: 25px;
+            font-size: 1.1rem;
         }
 
         .btn-retry {
             display: inline-block;
-            padding: 12px 35px;
+            padding: 15px 40px;
             background-color: #ff4d6d;
             color: white;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            transition: transform 0.2s, background 0.3s;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3);
         }
 
         .btn-retry:hover {
             background-color: #ff758f;
-            transform: scale(1.05);
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(255, 77, 109, 0.4);
         }
     </style>
 </head>
